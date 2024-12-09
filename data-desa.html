@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Desa - OpenDataBanyuajuh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header nav {
+            background-color: #28a745;
+            padding: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        header nav ul li a.active {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .data-desa .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .category-box {
+            background-color: #fff;
+            border: 2px solid #28a745;
+            border-radius: 8px;
+            text-align: center;
+            width: 200px;
+            padding: 20px;
+            text-decoration: none;
+            color: #000;
+            transition: 0.3s;
+        }
+
+        .category-box img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .category-box:hover {
+            background-color: #28a745;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .category-box h2 {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="data-desa.html" class="active">Data Desa</a></li>
+                <li><a href="dokumen-desa.html">Dokumen Desa</a></li>
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="data-desa">
+            <h1>Data Desa</h1>
+            <p>Pilih kategori data yang ingin Anda lihat:</p>
+            <div class="categories">
+                <a href="data-penduduk.html" class="category-box">
+                    <img src="https://storage.googleapis.com/a1aa/image/HKw8G2KhBKbLJFoj5zIwxpcvf5Nz6hQZfikJzKZdqkO02O0TA.jpg" alt="Penduduk">
+                    <h2>Penduduk</h2>
+                </a>
+                <a href="data-pendidikan.html" class="category-box">
+                    <img src="https://storage.googleapis.com/a1aa/image/W67eTpcCIKz1Ua3Jf16MTwPUtSAU1vx5Tp8BgL0fsvqntdonA.jpg" alt="Pendidikan">
+                    <h2>Pendidikan</h2>
+                </a>
+                <a href="data-ekonomi.html" class="category-box">
+                    <img src="https://storage.googleapis.com/a1aa/image/sWmeepawHsiXbUFJs77ujCEseWiRFaunVGbvfeUXYXeittD9E.jpg" alt="Ekonomi">
+                    <h2>Ekonomi</h2>
+                </a>
+                <a href="data-kesehatan.html" class="category-box">
+                    <img src="https://storage.googleapis.com/a1aa/image/ur4HPJNJ0BbVMhZhNF3tJQAbovSjfb2I0D8C0LX1uByabH6JA.jpg" alt="Kesehatan">
+                    <h2>Kesehatan</h2>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 OpenDataBanyuajuh. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
