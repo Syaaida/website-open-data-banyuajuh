@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #28a745;
+}
+
+.jumbotron {
+  margin-top: 70px;
+  background-color: #28a745;
+}
+
+.deskripsi {
+  margin-bottom: 50px;
+}
+.deskripsi-singkat {
+  margin: 40px 0;
+}
+.cari {
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 50px;
+  color: #28a745;
+  font-size: 12pt;
+  background-color: white;
+}
+
+.primer {
+  color: #28a745;
+}
+
+.img-fluid {
+  border-radius: 8px;
+}
+.judul {
+  background-color: #28a745;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #f5f5f5;
+}

@@ -4,170 +4,235 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beranda - OpenDataBanyuajuh</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f9f9;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-
-      header nav {
-        background-color: #28a745;
-        padding: 10px;
-      }
-
-      header nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-      }
-
-      header nav ul li {
-        margin: 0 15px;
-      }
-
-      header nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-      }
-
-      header nav ul li a.active {
-        text-decoration: underline;
-      }
-
-      .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .logo img {
-        height: 50px; /* Sesuaikan tinggi logo sesuai kebutuhan Anda */
-      }
-
-      main {
-        flex: 1;
-        padding: 20px;
-        text-align: center;
-      }
-
-      footer {
-        background-color: #28a745;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        position: static;
-      }
-
-      h2,
-      h3 {
-        text-align: center;
-        color: #28a745;
-      }
-
-      p {
-        text-align: justify;
-        line-height: 1.6;
-      }
-
-      .center-text {
-        text-align: center;
-      }
-
-      ul {
-        text-align: justify;
-        line-height: 1.6;
-        margin-left: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
-          <h1 class="logo">
-            <!-- <img src="images/logo.png" alt="OpenDataBanyuajuh Logo" /> -->
-            OpenDataBanyuajuh
-          </h1>
-          <ul class="nav-links">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="data-desa.html">Data Desa</a></li>
-            <li><a href="dokumen-desa.html">Dokumen Desa</a></li>
-            <li><a href="berita.html">Berita</a></li>
-            <li><a href="tentang.html">Tentang</a></li>
-          </ul>
+          <a class="navbar-brand fw-medium" href="#"
+            >OpenData <br />
+            Banyuajuh</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto fs-6">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data-desa.html">Data Desa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dokumen-desa.html">Dokumen Desa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="berita.html">Berita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentang.html">Tentang</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <!-- akhir navbar -->
     </header>
     <main>
-      <section>
-        <h2>Selamat Datang di OpenDataBanyuajuh</h2>
-        <p class="center-text">
-          Platform penyedia informasi dan data resmi Desa Banyuajuh.
-        </p>
+      <!-- Jumbotron -->
+      <section class="jumbotron">
+        <div class="container py-5 text-white">
+          <div class="row">
+            <div class="col">
+              <h1>
+                Temukan Informasi Terkini dan Data Terbuka Desa Banyuajuh.
+              </h1>
+              <p class="deskripsi">
+                Dapatkan akses ke banyak dataset, berita, dan dokumen penting
+                dari desa Banyuajuh.
+              </p>
+              <a href="data-desa.html" class="cari fw-medium"
+                ><i class="bi bi-search"></i> Cari Data</a
+              >
+            </div>
+            <div class="col item-center">
+              <img
+                src="assets/hero_img.png"
+                alt="hero image"
+                width="330"
+                class="img-fluid mx-auto d-block"
+              />
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- Akhir Jumbotron -->
 
-      <section>
-        <p>
-          Selamat Datang di OpenDataBanyuajuh! Platform ini adalah pusat
-          informasi resmi Desa Banyuajuh. Kami berkomitmen untuk menyediakan
-          data yang transparan, akurat, dan terkini untuk mendukung pembangunan
-          desa yang inklusif dan berkelanjutan. Akses data, dokumen, berita, dan
-          informasi lainnya dengan mudah melalui portal ini.
-        </p>
+      <!-- Deskripsi singkat -->
+      <section class="deskripsi-singkat">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-5">
+              <img
+                src="assets/Picture3.png"
+                alt="tani"
+                width="360"
+                class="img-fluid mx-auto d-block"
+              />
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <div class="desc">
+                <h3 class="primer">Selamat Datang di OpenData Banyuajuh</h3>
+                <p>
+                  Selamat Datang di OpenDataBanyuajuh! Platform ini adalah pusat
+                  informasi resmi Desa Banyuajuh. Kami berkomitmen untuk
+                  menyediakan data yang transparan, akurat, dan terkini untuk
+                  mendukung pembangunan desa yang inklusif dan berkelanjutan.
+                  Akses data, dokumen, berita, dan informasi lainnya dengan
+                  mudah melalui portal ini.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- Akhir Deskripsi singkat -->
 
-      <section>
-        <h3>Visi Desa Banyuajuh</h3>
-        <p>
-          <em
-            >"Terwujudnya Desa Banyuajuh yang mandiri, sejahtera, dan berdaya
-            saing melalui pemanfaatan teknologi informasi serta pengelolaan
-            sumber daya yang berkelanjutan."</em
-          >
-        </p>
+      <!-- Visi & misi desa -->
+      <section class="visi">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="text-white col d-flex align-items-center justify-content-center judul py-5"
+            >
+              <h1>Visi & Misi</h1>
+            </div>
+            <div class="col d-flex align-items-center py-5">
+              <div class="isi px-4">
+                <h3 class="primer">Visi</h3>
+                <p>
+                  "Mewujudkan Desa yang Mandiri, Sejahtera, dan Berdaya Saing
+                  melalui Pemberdayaan Masyarakat dan Pengelolaan Potensi Lokal
+                  yang Berkelanjutan."
+                </p>
+                <h3 class="primer">Misi</h3>
+                <ol>
+                  <li>
+                    Meningkatkan Kesejahteraan Masyarakat melalui Pengembangan
+                    Ekonomi Berbasis Potensi Lokal.
+                  </li>
+                  <li>
+                    Membangun Infrastruktur yang Berkualitas untuk Mendukung
+                    Aksesibilitas dan Pelayanan Publik.
+                  </li>
+                  <li>
+                    Mendorong Partisipasi Aktif Masyarakat dalam Pemerintahan
+                    Desa dan Pelestarian Nilai-Nilai Sosial Budaya.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- akhir visi & misi -->
 
-      <section>
-        <h3>Misi Desa Banyuajuh</h3>
-        <ul>
-          <li>
-            Meningkatkan Kesejahteraan Masyarakat: Memberdayakan masyarakat
-            melalui program pendidikan, kesehatan, dan pemberdayaan ekonomi
-            lokal.
-          </li>
-          <li>
-            Meningkatkan Transparansi dan Akses Informasi: Mengembangkan sistem
-            informasi desa yang transparan dan mudah diakses oleh seluruh warga.
-          </li>
-          <li>
-            Mengoptimalkan Potensi Sumber Daya Alam dan Manusia: Mengelola
-            sumber daya desa secara berkelanjutan untuk mendukung kemajuan
-            ekonomi dan sosial.
-          </li>
-          <li>
-            Mendorong Partisipasi Masyarakat: Melibatkan masyarakat dalam
-            perencanaan, pelaksanaan, dan evaluasi pembangunan desa.
-          </li>
-          <li>
-            Mengembangkan Infrastruktur dan Teknologi Desa: Meningkatkan akses
-            dan kualitas infrastruktur serta teknologi untuk mendukung aktivitas
-            masyarakat.
-          </li>
-        </ul>
+      <!-- profil desa -->
+      <section class="profil">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-6 d-flex align-items-center">
+              <div class="profile">
+                <h3 class="primer">Profil Singkat Desa</h3>
+                <p>
+                  Desa Banyuajuh merupakan salah satu desa yang terletak di
+                  wilayah Kecamatan Kamal, Kabupaten Bangkalan, Provinsi Jawa
+                  Timur. Desa Banyuajuh berbatasan dengan beberapa wilayah yaitu
+                  di sebelah selatan berbatasan dengan Desa Kamal, di sebelah
+                  utara Desa ini berbatasan dengan Desa Gili Timur, di sebelah
+                  timur berbatasan dengan Desa Kebun dan di sebelah barat
+                  berbatasan dengan Desa Gili Anyar.
+                </p>
+                <p>
+                  Desa ini memiliki luas wilayah kurang lebih 940 M<sup>2</sup>,
+                  dengan jumlah populasi mencapai 3522 jiwa dengan penduduk
+                  laki-laki sebanyak 1475 jiwa dan sebanyak 1047 dari penduduk
+                  perempuan.
+                </p>
+              </div>
+            </div>
+            <div class="col-5">
+              <img
+                src="assets/tani.jpeg"
+                alt="tani"
+                width="360"
+                class="img-fluid mx-auto d-block"
+              />
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- akhir profil desa -->
     </main>
+
+    <!-- footer -->
     <footer>
-      <p class="center-text">
-        &copy; 2024 OpenDataBanyuajuh. All rights reserved.
-      </p>
+      <div class="container text-white py-5">
+        <div class="row">
+          <div class="col">
+            <h3 class="text-black">OpenData Banyuajuh</h3>
+            <br />
+          </div>
+        </div>
+        <div class="row justify-content-between text-black">
+          <div class="col-4">
+            <h5>Hubungi Kami</h5>
+            <p>
+              data@banyuajuh.go.id
+              <br />
+              +6284532189052
+            </p>
+            <h5>Alamat</h5>
+            <p>Jl. Kusuma Bangsa III, Baratleke, Banyu Ajuh, Kec. Kamal</p>
+          </div>
+          <div class="col-4">
+            <h5>Ikuti Kami</h5>
+            <p><i class="bi bi-instagram"></i> Instagram</p>
+            <p><i class="bi bi-facebook"></i> Facebook</p>
+            <p><i class="bi bi-twitter-x"></i> X</p>
+            <p><i class="bi bi-tiktok"></i> Tiktok</p>
+            <p><i class="bi bi-medium"></i> Medium</p>
+          </div>
+        </div>
+        <br />
+        <div class="row text-black">
+          <hr />
+          <p class="text-center text-black">
+            Copyright open data Banyuajuh 2024
+          </p>
+        </div>
+      </div>
     </footer>
+    <!-- akhir footer -->
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
